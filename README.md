@@ -3,7 +3,7 @@ This ReadMe.md will be including some of the style that I will use in Readme.md 
 
 ## Basic Syntax
 Heading - Same thing as H1-H6 [^1]
-[^1] : H1 # - H2 ######
+[^1]: H1 #  H2 ######
 
 
 
