@@ -1,0 +1,63 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
+ /* I googled which fonts are best for website and I picked out Alegreya */
+ 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+ }
+
+ li, a, button {
+    font-family: "Alegreya";
+    font-weight: 500px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+ }
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+ }
+/* practicing on flex */
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+
+}
+
+.nav__links li  {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+/* The transition will be for all at 0.3 seconds and it will ease with 0s delay */
+/* It will be easier to read it out since I have to find a way to describe my product to customer or peers later */
+
+.nav__links li a:hover {
+    color: aqua;
+}
+
+button {
+    padding: 10px 26px;
+    background-color: rgba(0,136,169,1);
+    /* rgba because they have alpha value. Use opacity more for less boring */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: green;   
+}
