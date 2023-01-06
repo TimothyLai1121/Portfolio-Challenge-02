@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
  /* I googled which fonts are best for website and I picked out Alegreya */
+ /* standard @media, I will go with 768px and 760px again since my challenge 01, that was my gold standard and caused me to learn more */
  
  * {
     box-sizing: border-box;
@@ -20,12 +21,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 15px 50px;
+    /* padding on 15px 50px 15px 50p */
  }
 /* practicing on flex */
 
 .logo {
     cursor: pointer;
+    margin-right: auto;
 }
 
 .nav__links {
@@ -49,15 +52,25 @@
 }
 
 button {
-    padding: 10px 26px;
+    padding: 20px 40px; /* without padding, the button won't complete */
     background-color: rgba(0,136,169,1);
     /* rgba because they have alpha value. Use opacity more for less boring */
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-left: 20px;
 }
 
 button:hover {
     background-color: green;   
 }
+
+/* HEADER AND NAV */
+/*
+@media only screen and (max-width: 760px;) {
+
+}
+*/
+
+
