@@ -6,9 +6,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    font-family: 'Alegreya';
  }
-
+/*
  li, a, button {
     font-family: "Alegreya";
     font-weight: 500px;
@@ -22,10 +22,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    /* padding on 15px 50px 15px 50p */
+    /* padding on 15px 50px 15px 50p
  }
-/* practicing on flex */
 
+/* practicing on flex */
+/*
 .logo {
     cursor: pointer;
     margin-right: auto;
@@ -46,15 +47,19 @@
 }
 /* The transition will be for all at 0.3 seconds and it will ease with 0s delay */
 /* It will be easier to read it out since I have to find a way to describe my product to customer or peers later */
-
+/*
 .nav__links li a:hover {
     color: aqua;
 }
-
+*/
+/*
 button {
     padding: 20px 40px; /* without padding, the button won't complete */
-    background-color: rgba(0,136,169,1);
+    /*
+    background-color: rgba(0,136,169,1); */
+    
     /* rgba because they have alpha value. Use opacity more for less boring */
+    /*
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -72,3 +77,52 @@ button:hover {
 
 }
 */
+/*
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/Front-Page/assets/profile-picture/4k-Code.jpg");
+    background-position: center;
+    background-size: cover;
+}
+*/
+
+body {
+    display: flex;
+    justify: center;
+    align-self: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px,auto);
+    margin:40px;
+    grid-auto-flow: dense;
+}
+
+
+.container .box {
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size:20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s; 
+}
+
+.container .box:hover{
+    background: aqua;
+}
+
+.container .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
