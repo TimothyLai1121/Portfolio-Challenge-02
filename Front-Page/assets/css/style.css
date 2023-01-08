@@ -78,15 +78,8 @@ button:hover {
 }
 */
 /*
-.container {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/Front-Page/assets/profile-picture/4k-Code.jpg");
-    background-position: center;
-    background-size: cover;
-}
-*/
 
+*/
 body {
     display: flex;
     justify: center;
@@ -128,6 +121,8 @@ body {
     margin-bottom: 10px;
 }
 
+
+
 .container .box:nth-child(1) {
     grid-column: span 2;
     grid-row: span 1;
@@ -146,4 +141,19 @@ body {
 .container .box:nth-child(5){
     grid-column: span 3;
     grid-row: span 1;
+}
+
+footer {
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
